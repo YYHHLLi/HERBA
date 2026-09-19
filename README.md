@@ -51,6 +51,7 @@ The released checkpoints and corresponding cached test datasets are already prov
 
 The main structure of the released repository is:
 
+```text
 HERBA/
 ├── Checkpoint/
 │   ├── regression_cv5/
@@ -75,9 +76,11 @@ HERBA/
 ├── utils.py                      # Common utilities
 ├── environment.yml               # Conda environment
 └── README.md
+```
 
-Each directory under Checkpoint/ contains the trained HERBA models and corresponding cached test partitions. A typical task directory is organized as:
+Each directory under `Checkpoint/` contains the trained HERBA models and corresponding cached test partitions. A typical task directory is organized as:
 
+```text
 Checkpoint/regression_cv5/
 ├── HERBA_f0.pt
 ├── HERBA_f1.pt
@@ -90,8 +93,9 @@ Checkpoint/regression_cv5/
     ├── f2_test.data
     ├── f3_test.data
     └── f4_test.data
+```
 
-⚠️ Important: Each trained checkpoint should always be evaluated together with the corresponding cached test set from the same experimental setting and fold.
+> ⚠️ **Important:** Each trained checkpoint should always be evaluated together with the corresponding cached test set from the same experimental setting and fold.
 
 🗂️ Data
 
