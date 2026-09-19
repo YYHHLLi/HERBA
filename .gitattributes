@@ -1,0 +1,2 @@
+Checkpoint/**/*.pt filter=lfs diff=lfs merge=lfs -text
+Checkpoint/**/dataset_cache/*_test.data filter=lfs diff=lfs merge=lfs -text

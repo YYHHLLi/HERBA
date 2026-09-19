@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime files
+*.log
+nohup.out
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+
+# HERBA cached datasets:
+# ignore all cached .data files first
+Checkpoint/**/dataset_cache/*.data
+
+# but keep test partitions
+!Checkpoint/**/dataset_cache/*_test.data
